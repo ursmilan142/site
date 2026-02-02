@@ -176,6 +176,12 @@
       <link expr:href='data:blog.blogspotFaviconUrl' rel='shortcut icon' type='image/x-icon'/>
     </b:if>
   </b:with>
+  
+  <!-- Debug: Check favicon sources -->
+  <script>
+  console.log(&#39;meta_icon variable:&#39;, &#39;<data:vars.meta_icon/>&#39;);
+  console.log(&#39;Blogger default favicon:&#39;, &#39;<data:blog.blogspotFaviconUrl/>&#39;);
+  </script>
 
   <b:comment><!--[ Theme Color ]--></b:comment>
   <b:with value='snippet((data:vars.status_light != &quot;transparent&quot; ? data:vars.status_light : &quot;#ffffff&quot;))' var='color'>
@@ -300,7 +306,7 @@
 ==================================
      Home Page Title Section
 ==================================
-<Variable name="home.title" description="Enter Your Custom Title in Value (Enable Custom Title Plugin)" type="string" default="" value="Plus Ui"/>
+<Variable name="home.title" description="Enter Your Custom Title in Value (Enable Custom Title Plugin)" type="string" default="" value="infoVerse"/>
 
 [!] Enter Your Custom Home page Title in Value
 [!] @type {String}
@@ -310,20 +316,20 @@
 ==================================
           Configurations
 ==================================
-<Variable name="meta.keywords" description="Keywords Meta Tag content" type="string" default="" value="Plus ui blogger templates, Free download Plus Ui, Plus UI GitHub"/>
+<Variable name="meta.keywords" description="Keywords Meta Tag content" type="string" default="" value="infoVerse, technology blog, education tips, tech tutorials, career advice, gaming blog, lifestyle tips, digital skills, Nepal blog, Milan Pandey"/>
 [!] Keywords Meta Tag content (comma-separated)
 [!] @type {String}
 [!] If Blank: Doesn't add keywords other than page name
 [!] Message: Separate multiple keyword with comma
 
-<Variable name="meta.icon" description="Favicon URL" type="string" default="" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb_ryp3yI-Vua7y-bJaZZeRGWDY_pZUXWl5SnGtRrrLPhSVW4-KhLxEClyMqStVRw3ltR8KtS9FyAVNEoZUyFbCobvSmzthXV1vG0VMgv-uxCx3yGrA0d4mOK-1YwJ7v0P_UWb-Di26gk7Wj4MMVr1NCiUIjR6TO7rZnLWI8B5LgS7RARhnQ-0J2pzMFb7/s0/favicon.png"/>
+<Variable name="meta.icon" description="Favicon URL" type="string" default="" value="https://tinyurl.com/57j3phbk"/>
 [!] Favicon URL
 [!] @type {String}
 [!] Recommended image ratio: 1:1
 [!] If Blank: It will use Favicon URL from Blogger Blog Settings
 [!] Warning: Dont't add invalid URL
 
-<Variable name="meta.image" description="Image Meta Tag URL" type="string" default="" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXcTftM-dWwVR9KOkc8PzPng9FbMz-KC083W_hWFV2t2LA10-l0BtsfTj3J3WL2TrClC8aohb-H2Qn_W2DylQ7R11V71k2SGozHBnjSNAKLEUbKzLW4ALsYwMEjcEGSCIyfGLQwERqsQRFlnTv0wm8M0CkGroeYzpKJ_ZPC6_diPbuINzcP075OzTcF7I/s0/meta-image.png"/>
+<Variable name="meta.image" description="Image Meta Tag URL" type="string" default="" value="https://tinyurl.com/3n7225fr"/>
 [!] Image Meta Tag content
 [!] @type {String}
 [!] Recommended image ratio: 16:9
@@ -331,7 +337,7 @@
 [!] Message: If the view is single item, it will use thumbnail url of item if available
 [!] Warning: Don't add invalid URL
 
-<Variable name="opengraph.image" description="Open Graph Image URL" type="string" default="" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXxFjLFkLM3eZsKgzpO8R-f3pQPsb-ica2dzqZ-TpJw-fhOsZMG3fUs6UzvcualJbzE9xoUPtqIAI68pQcy9E2IXSFt8SxYEpcaIln78PEZzj1S-iiDp4aJtwNdkImyH5oEtzuzKUxetnUMMjaJWhi6BTLBkNxQX8tUzsL3Q2hqQq_hBF7_w6z5yUYxws/s0/open-graph-image.png"/>
+<Variable name="opengraph.image" description="Open Graph Image URL" type="string" default="" value="https://tinyurl.com/3n7225fr"/>
 [!] Open Graph Image URL
 [!] @type {String}
 [!] Recommended image ratio: 16:9
@@ -339,7 +345,7 @@
 [!] Message: If the view is single item, it will use thumbnail url of item if available
 [!] Warning: Don't add invalid URL
 
-<Variable name="twitter.image" description="Twitter Card Image URL" type="string" default="" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb_ryp3yI-Vua7y-bJaZZeRGWDY_pZUXWl5SnGtRrrLPhSVW4-KhLxEClyMqStVRw3ltR8KtS9FyAVNEoZUyFbCobvSmzthXV1vG0VMgv-uxCx3yGrA0d4mOK-1YwJ7v0P_UWb-Di26gk7Wj4MMVr1NCiUIjR6TO7rZnLWI8B5LgS7RARhnQ-0J2pzMFb7/s0/twitter-card-image.png"/>
+<Variable name="twitter.image" description="Twitter Card Image URL" type="string" default="" value="https://tinyurl.com/3n7225fr"/>
 [!] Twitter Card Image URL
 [!] @type {String}
 [!] Recommended image ratio: 16:9
@@ -347,13 +353,13 @@
 [!] Message: If the view is single item, it will use thumbnail url of item if available
 [!] Warning: Don't add invalid URL
 
-<Variable name="metadata.organizationLogo" description="Metadata Organization Logo" type="string" default="" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb_ryp3yI-Vua7y-bJaZZeRGWDY_pZUXWl5SnGtRrrLPhSVW4-KhLxEClyMqStVRw3ltR8KtS9FyAVNEoZUyFbCobvSmzthXV1vG0VMgv-uxCx3yGrA0d4mOK-1YwJ7v0P_UWb-Di26gk7Wj4MMVr1NCiUIjR6TO7rZnLWI8B5LgS7RARhnQ-0J2pzMFb7/s0/organization-logo.png"/>
+<Variable name="metadata.organizationLogo" description="Metadata Organization Logo" type="string" default="" value="https://tinyurl.com/3n7225fr"/>
 [!] Metadata Organization Logo
 [!] @type {String}
 [!] Recommended image ratio: 1:1
 [!] Warning: Don't add invalid URL
 
-<Variable name="metadata.defaultThumbnail" description="Metadata Default Thumbnail" type="string" default="" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvC6vD6OtRfm9LfBlmnU43YBdoPU22C5TbYwdvBh-tcs70b-uyK7D_iri6WRtUUrtvSrhJrp5vo3IQTo-ta0t_J1VrozfN3ZdCapfbhEKcqMgphQeM3clXm8goom0uOKITSosfDKij6h9AUyYyZ7-nliDKV5EOiE9YyzFA_yW1vtud1lIt_mgTxGpBHUA/s0/metadata-default-thumbnail.png"/>
+<Variable name="metadata.defaultThumbnail" description="Metadata Default Thumbnail" type="string" default="" value="https://tinyurl.com/3n7225fr"/>
 [!] Metadata Default Thumbnail
 [!] @type {String}
 [!] Recommended image ratio: 16:9
@@ -7862,7 +7868,7 @@ const PlusUIConfig = () => ({});
                   </b:widget>
                   <b:widget id='LinkList23' locked='true' title='Tech &amp;amp; Digital' type='LinkList' version='2' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='link-3'>#</b:widget-setting>
+                      <b:widget-setting name='link-3'>/search/label/Blog</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
                       <b:widget-setting name='text-1'>Internet</b:widget-setting>
                       <b:widget-setting name='link-1'>/search/label/Internet</b:widget-setting>
@@ -7920,8 +7926,8 @@ const PlusUIConfig = () => ({});
                     <b:widget-settings>
                       <b:widget-setting name='link-3'>/search/label/Tips</b:widget-setting>
                       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                      <b:widget-setting name='text-1'>Top 3</b:widget-setting>
-                      <b:widget-setting name='link-1'>/search/label/Top-3</b:widget-setting>
+                      <b:widget-setting name='text-1'>Top 3-5</b:widget-setting>
+                      <b:widget-setting name='link-1'>search/label/Top%203-5</b:widget-setting>
                       <b:widget-setting name='text-0'>Shopping</b:widget-setting>
                       <b:widget-setting name='link-2'>/search/label/Gaming</b:widget-setting>
                       <b:widget-setting name='text-3'>Tips</b:widget-setting>
